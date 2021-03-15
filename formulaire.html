@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>mon premier formulaire</title>
+</head>
+<body>
+<h1>votre avis nous intéresse</h1>
+<div>
+<table>
+<td>
+<form name="information persennelle" method="post"    action="" enctype="multipart/form-data"/>
+
+<fieldset>
+		      <legend>Informations Personnelles</legend>
+<ol>
+<li>Nom <input type="text"  required /></li>
+<li> Date de naissance <input type="date"  required /></li>
+<li>Emploi<select name="emploi" >
+<option></option>
+	<option> etudiant</option>
+	<option>adminstrateur réseau</option>
+	<option>devollopeur web</option>
+	<option>web designer</option>
+	<option>divops</option>
+	</select></li>
+<li>Site <input type="url" placeholder="http//:monsite.com" pattern="(http/https)://()?*" /></li>
+<li>Approx Salaire annuel <br><input type="number" step="1000" min="0" name="salair" placeholder="$" required /></li> 
+</ol>
+
+
+</td>
+
+<td>
+
+ <fieldset>
+		      <legend>Informations de Contact</legend>
+			  <ol>
+			      <li>Adresse ligne 1 <br><input type="address" name="adresse" required /></li>
+				  <li>Adresse ligne 2 <br><input type="address" name="adresse" required /></li>
+				  <li>Paye <select name="paye" >
+				  <option></option>
+				  <option>Algérie</option>
+				  <option>Maroc</option>
+				  <option>Tunisie</option>
+				  </select>
+				  </li>
+				  <li>Tél <input type="tel" name="telephone" placeholder="eg: +213 67..." required=""></li>
+				  <li>Courriel <input type="email" name="email" id="email" required /></li> 
+			  </ol>
+		   </fieldset>
+</td>
+</form>
+</table>
+</div>
+<h1>Préférences</h1>
+	<div>
+    Choisir une couleur <input type="color" name="color"  required /><br>
+    </div>
+	<div>
+	Sur une échelle de 1 à 10, quel est votre degré d'enthousiasme pour HTML5? <input type="range" name="rang" step="1" min="1" max="10" required><br>
+    </div>
+	<div>
+	<input type="button" name="Envoyer" value="Envoyer">
+    </div>
+</body>
+</html>
